@@ -8,7 +8,7 @@ I've taken bits and pieces from many places including:
 
 # Installation
 
-    curl https://raw.github.com/robingustafsson/dotfiles/master/bootstrap.sh > /bin/sh
+    bash <(curl -s https://raw.github.com/robingustafsson/dotfiles/master/bootstrap.sh)
 
 # Environment
 
