@@ -1,0 +1,28 @@
+[user]
+	name = <%= print("- Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+	email = <%= print("- Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+[alias]
+	a = add
+	br = branch
+	brd = branch -d
+	c = commit
+	cm = commit -m
+	co = checkout
+	l = log
+	m = merge
+	p = push
+	pt = push --tags
+	s = status
+	u = pull
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	excludesfile = ~/.gitignore
+	editor = nano
+	autocrlf = input
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset

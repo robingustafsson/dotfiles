@@ -1,0 +1,40 @@
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# custom
+alias reload='source ~/.bashrc'
+
+# grep
+alias gr='grep -I --color=auto --exclude="*svn*" --exclude="all-wcprops" --exclude="entries" --exclude="*.pyc" --exclude="*.po" -R -n -C 2'
+alias psgr='ps auxw | grep'
+
+# git
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gcm='git commit -m'
+alias gchlog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
+alias gco='git checkout'
+alias gd='git diff'
+alias gl='git log'
+alias gp='git push'
+alias gpt='git push --tags'
+alias grm='git rm'
+alias grms="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gs='git status'
+alias gu='git pull'
+
+# ifconfig
+alias myips='ifconfig -a | perl -nle"/(\d+\.\d+\.\d+.\d+)/ && print $1"'
+
+# json
+alias jsonpp='python -mjson.tool'
+
+# pulseaudio
+alias pulserestart='pulseaudio --kill && pulseaudio --start'
+
+# tar
+alias untargz='tar -xzf'
