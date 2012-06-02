@@ -14,8 +14,7 @@ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~
 rvm install 1.9.3
 rvm use 1.9.3
 rvm --default use 1.9.3
-yes | gem install bundler dotfiles-installer
-bundle update
+yes | gem install bundler
 
 # Copy original .bashrc to .bashrc.local.
 if [ -f ~/.bashrc ] && [ ! -f ~/.bashrc.local ]; then
@@ -31,6 +30,7 @@ if [ -d ~/.dotfiles ]; then
   git submodule update
 
   notice "Installing..."
+  bundle update
   bundle exec rake install
 else
   notice "Downloading..."
@@ -38,6 +38,7 @@ else
 
   notice "Installing..."
   cd ~/.dotfiles
+  bundle update
   bundle exec rake install
 fi
 
