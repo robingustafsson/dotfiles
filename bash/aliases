@@ -11,6 +11,8 @@ alias gr='grep -I --color=auto --exclude="*svn*" --exclude="all-wcprops" --exclu
 alias psgr='ps auxw | grep'
 
 # git
+alias ga='git add'
+alias gau='git add -u'
 alias gb='git branch'
 alias gbd='git branch -d'
 alias gc='git commit'
@@ -32,6 +34,9 @@ alias myips='ifconfig -a | perl -nle"/(\d+\.\d+\.\d+.\d+)/ && print $1"'
 
 # json
 alias jsonpp='python -mjson.tool'
+
+# mods
+alias fixmouse='sudo modprobe -r psmouse && sudo modprobe -a psmouse'
 
 # pulseaudio
 alias pulserestart='pulseaudio --kill && pulseaudio --start'

@@ -2,7 +2,7 @@ export EDITOR="nano"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 export MANPAGER="less -X"
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help:* -h"
+export HISTIGNORE="pwd;exit:date:* --help:* -h"
 
 # don't overwrite existing files with stdout redirection
 set -o noclobber

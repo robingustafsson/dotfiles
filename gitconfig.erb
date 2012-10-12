@@ -15,9 +15,27 @@
 	s = status
 	u = pull
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+        branch = auto
+        diff = auto
+        status = auto
+[color "branch"]
+        current = green bold
+        local = normal
+        remote = blue bold
+        plain = normal
+[color "diff"]
+        plain = normal
+        meta = bold
+        frag = cyan
+        old = red bold
+        new = green bold
+        commit = yellow
+        whitespace = normal red
+[color "status"]
+        updated = green bold
+        changed = red bold
+        untracked = normal
+        nobranch = red black bold
 [core]
 	excludesfile = ~/.gitignore
 	editor = nano
@@ -25,4 +43,4 @@
 [apply]
 	whitespace = nowarn
 [format]
-	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+	pretty = %C(green bold)%h%Creset %C(blue)(%an, %cr)\n%Creset%B
