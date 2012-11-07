@@ -9,3 +9,4 @@ set -o noclobber
 
 # case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
+shopt -s histappend
