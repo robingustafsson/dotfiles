@@ -1,1 +1,2 @@
 source ~/.bash/completions.d/git_completion
+source ~/.bash/completions.d/nosetests_completion

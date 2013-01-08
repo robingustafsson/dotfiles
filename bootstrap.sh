@@ -30,6 +30,7 @@ if [ -d ~/.dotfiles ]; then
   git submodule update
 
   notice "Installing..."
+  pip install -U nosecomplete
   bundle update
   bundle exec rake install
 else
@@ -38,6 +39,7 @@ else
 
   notice "Installing..."
   cd ~/.dotfiles
+  pip install nosecomplete
   bundle update
   bundle exec rake install
 fi
